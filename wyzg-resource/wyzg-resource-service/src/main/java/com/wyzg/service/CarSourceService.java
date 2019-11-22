@@ -2,15 +2,14 @@ package com.wyzg.service;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.wyzg.enums.ExceptionEnums;
-import com.wyzg.exception.WyzgException;
+import com.wyzg.common.VO.PageResult;
+import com.wyzg.common.enums.ExceptionEnums;
+import com.wyzg.common.exceptions.WyzgException;
 import com.wyzg.mapper.CarSourceMapper;
 import com.wyzg.pojo.CarSource;
-import com.wyzg.pojo.PageResult;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import org.springframework.util.CollectionUtils;
 import tk.mybatis.mapper.entity.Example;
 
@@ -26,7 +25,7 @@ public class CarSourceService {
      * 查询所有车源并分页，可实现按照id升序或降序，可通过publishName和comment进行模糊查询
      * @return
      */
-    public PageResult<CarSource> queryCarByPage(Integer page, Integer rows, String sortBy,Boolean desc,String key) {
+    public PageResult<CarSource> queryCarByPage(Integer page, Integer rows, String sortBy, Boolean desc, String key) {
         //分页
         PageHelper.startPage(page,rows);
         //创建查询条件

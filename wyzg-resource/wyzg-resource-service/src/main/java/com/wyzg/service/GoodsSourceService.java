@@ -2,12 +2,11 @@ package com.wyzg.service;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.wyzg.enums.ExceptionEnums;
-import com.wyzg.exception.WyzgException;
+import com.wyzg.common.VO.PageResult;
+import com.wyzg.common.enums.ExceptionEnums;
+import com.wyzg.common.exceptions.WyzgException;
 import com.wyzg.mapper.GoodsSourceMapper;
-import com.wyzg.pojo.CarSource;
 import com.wyzg.pojo.GoodsSource;
-import com.wyzg.pojo.PageResult;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -29,7 +28,7 @@ public class GoodsSourceService {
      * @param sortBy
      * @return
      */
-    public PageResult<GoodsSource> queryGoodsByPage(Integer page, Integer rows,String sortBy,Boolean desc, String key) {
+    public PageResult<GoodsSource> queryGoodsByPage(Integer page, Integer rows, String sortBy, Boolean desc, String key) {
 
         //分页
         PageHelper.startPage(page,rows);
@@ -47,7 +46,7 @@ public class GoodsSourceService {
         //实现查询
         List<GoodsSource> sources = goodsSourceMapper.selectByExample(example);
         if(CollectionUtils.isEmpty(sources)){
-            throw new WyzgException(ExceptionEnums.NO_CARSOURCE_COULD_USE);
+            throw new WyzgException(ExceptionEnums.NO_GOODS_SOURCE_COULD_USE);
         }
         //封装分页对象
         PageInfo<GoodsSource> info = new PageInfo<>(sources);

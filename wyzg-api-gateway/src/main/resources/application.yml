@@ -20,6 +20,7 @@ zuul:
   routes:
     user-service: /user/**
     upload-service: /upload/**
+    resource-service: /resource/**
 
   #Zuul中提供了一个ignored-patterns属性，用来忽略不希望路由的URL路径，
   ignored-patterns: /upload/**

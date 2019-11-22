@@ -11,12 +11,14 @@
 
     <groupId>com.wyzg.service</groupId>
     <artifactId>wyzg-resource-interface</artifactId>
-
     <dependencies>
         <dependency>
-            <groupId>tk.mybatis</groupId>
-            <artifactId>mapper-core</artifactId>
-            <version>1.0.4</version>
+            <groupId>javax.persistence</groupId>
+            <artifactId>persistence-api</artifactId>
+            <version>1.0</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
+
+
 </project>

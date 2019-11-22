@@ -12,7 +12,6 @@
     <groupId>com.wyzg.service</groupId>
     <artifactId>wyzg-resource-service</artifactId>
 
-
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -22,7 +21,6 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-            <version>2.0.0.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -46,17 +44,13 @@
         <dependency>
             <groupId>com.github.pagehelper</groupId>
             <artifactId>pagehelper-spring-boot-starter</artifactId>
-            <version>${pageHelper.starter.version}</version>
         </dependency>
         <!--mysql驱动-->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.wyzg.service</groupId>
-            <artifactId>wyzg-resource-interface</artifactId>
-        </dependency>
+
         <dependency>
             <groupId>com.wyzg.service</groupId>
             <artifactId>wyzg-resource-interface</artifactId>
@@ -64,11 +58,18 @@
             <scope>compile</scope>
         </dependency>
         <dependency>
-            <groupId>com.wyzg.service</groupId>
+            <groupId>com.wyzg.common</groupId>
             <artifactId>wyzg-common</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+            <version>5.2.1.RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
+
 
 </project>
