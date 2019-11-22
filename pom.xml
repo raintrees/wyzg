@@ -13,6 +13,7 @@
         <module>wyzg-registry</module>
         <module>wyzg-common</module>
         <module>wyzg-user</module>
+        <module>wyzg-upload</module>
     </modules>
 
     <parent>

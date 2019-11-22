@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="wyzg-user-interface" />
+        <module name="wyzg-api-gateway" />
+        <module name="wyzg-registry" />
+        <module name="wyzg-upload" />
+        <module name="wyzg-user-service" />
+        <module name="wyzg-common" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="wyzg-config-server" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="wyzg-api-gateway" options="-parameters" />
+      <module name="wyzg-common" options="-parameters" />
+      <module name="wyzg-config-server" options="-parameters" />
+      <module name="wyzg-registry" options="-parameters" />
+      <module name="wyzg-upload" options="-parameters" />
+      <module name="wyzg-user" options="-parameters" />
+      <module name="wyzg-user-interface" options="-parameters" />
+      <module name="wyzg-user-service" options="-parameters" />
+      <module name="wyzg2" options="-parameters" />
+    </option>
+  </component>
+</project>
