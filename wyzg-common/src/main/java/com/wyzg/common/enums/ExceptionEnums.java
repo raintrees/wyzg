@@ -18,7 +18,8 @@ public enum  ExceptionEnums {
     FAIL_TO_SAVE(10010,"添加新用户失败"),
     ILLEGAL_PARAMETER(500,"非法参数异常"),
     NO_CARSOURCE_COULD_USE(10040,"没有车源可用"),
-    NO_GOODS_SOURCE_COULD_USE(10050,"没有货源可用");
+    NO_GOODS_SOURCE_COULD_USE(10050,"没有货源可用"),
+    UPLOAD_FAIL(10060,"文件上传失败");
     private Integer code;
     private String message;
 

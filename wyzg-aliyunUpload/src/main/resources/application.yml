@@ -1,0 +1,7 @@
+bucketName: "wyzg"
+accessKeyId: "LTAI4FxsMHx74gjRdsBb3sWw"
+accessKeySecret: "1Mbvl0NyFVMKX3gnb82rgUnmEF3Yvt"
+#OSS对应的区域
+endpoint: "http://oss-cn-shanghai.aliyuncs.com"
+filehost: "images"
+urlPrefix: "https://wyzg.oss-cn-shanghai.aliyuncs.com/"

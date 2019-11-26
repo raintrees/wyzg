@@ -15,6 +15,7 @@
         <module>wyzg-user</module>
         <module>wyzg-upload</module>
         <module>wyzg-resource</module>
+        <module>wyzg-aliyunUpload</module>
     </modules>
 
     <parent>

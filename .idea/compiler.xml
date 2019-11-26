@@ -10,6 +10,9 @@
         <module name="wyzg-api-gateway" />
         <module name="wyzg-registry" />
         <module name="wyzg-upload" />
+        <module name="wyzg-resource-service" />
+        <module name="wyzg-resource-interface" />
+        <module name="wyzg-aliyunUpload" />
         <module name="wyzg-user-service" />
         <module name="wyzg-common" />
       </profile>
@@ -20,10 +23,13 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="wyzg-aliyunUpload" options="-parameters" />
       <module name="wyzg-api-gateway" options="-parameters" />
       <module name="wyzg-common" options="-parameters" />
       <module name="wyzg-config-server" options="-parameters" />
       <module name="wyzg-registry" options="-parameters" />
+      <module name="wyzg-resource-interface" options="-parameters" />
+      <module name="wyzg-resource-service" options="-parameters" />
       <module name="wyzg-upload" options="-parameters" />
       <module name="wyzg-user" options="-parameters" />
       <module name="wyzg-user-interface" options="-parameters" />
