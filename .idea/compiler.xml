@@ -8,13 +8,15 @@
         <outputRelativeToContentRoot value="true" />
         <module name="wyzg-user-interface" />
         <module name="wyzg-api-gateway" />
+        <module name="wyzg-common" />
         <module name="wyzg-registry" />
-        <module name="wyzg-upload" />
-        <module name="wyzg-resource-service" />
+        <module name="wyzg-hightLight" />
+        <module name="wyzg-user-service" />
+        <module name="wyzg.aliyunUpload" />
         <module name="wyzg-resource-interface" />
         <module name="wyzg-aliyunUpload" />
-        <module name="wyzg-user-service" />
-        <module name="wyzg-common" />
+        <module name="wyzg-resource-service" />
+        <module name="wyzg-upload" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -27,6 +29,7 @@
       <module name="wyzg-api-gateway" options="-parameters" />
       <module name="wyzg-common" options="-parameters" />
       <module name="wyzg-config-server" options="-parameters" />
+      <module name="wyzg-hightLight" options="-parameters" />
       <module name="wyzg-registry" options="-parameters" />
       <module name="wyzg-resource-interface" options="-parameters" />
       <module name="wyzg-resource-service" options="-parameters" />
@@ -34,6 +37,7 @@
       <module name="wyzg-user" options="-parameters" />
       <module name="wyzg-user-interface" options="-parameters" />
       <module name="wyzg-user-service" options="-parameters" />
+      <module name="wyzg.aliyunUpload" options="-parameters" />
       <module name="wyzg2" options="-parameters" />
     </option>
   </component>
